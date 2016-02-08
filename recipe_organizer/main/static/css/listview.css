@@ -1,0 +1,25 @@
+a:link {
+	color:black;
+}
+a:visited {
+	color:black;
+}
+.title {
+	width:230px;
+	margin: auto;
+}
+.title h1 {
+	font-size: 60px;
+
+}
+.recipe {
+	margin-top: 40px;
+}
+.recipe h3 {
+	display: inline;
+	padding: 20px;
+}
+.create {
+	margin-top: 40px;
+	float:right;
+}

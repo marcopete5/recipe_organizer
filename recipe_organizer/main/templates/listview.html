@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>listview.html</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{% static "css/listview.css" %}">
+
+
+</head>
+<body>
+
+
+
+
+ <div class="container">
+  <div class="row">
+	<div class="title">
+		<h1>Recipes</h1>
+	</div>
+  </div>
+	
+  <div class="row">
+  	<div class="recipe">
+		{% for recipe in recipes %}
+
+		<h3><a href="/recipedetailview/{{ recipe.slug }}" style="text-decoration:none;">{{recipe.title}}</a></h3>
+
+		{% endfor %}
+	</div>
+  </div>
+	
+	<div class="row">
+		<div class="create">
+		<a class="btn btn-primary" href="/recipecreate" role="button">Create New</a>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>
+
+{% endblock body %}

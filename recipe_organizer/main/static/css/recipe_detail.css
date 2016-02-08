@@ -1,0 +1,32 @@
+a:link {
+	color:black;
+}
+a:visited {
+	color:black;
+}
+.title {
+	margin: auto;
+}
+.title h1 {
+
+	font-size: 50px;
+	text-align: center;
+	
+}
+.ingred h4 {
+	font-size: 26px;
+
+}
+.ingred {
+	margin-top: 60px;
+}
+.list {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.back {
+	margin-top: 150px;
+}
+.image {
+	float:right;
+}

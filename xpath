@@ -1,0 +1,16 @@
+closet cooking //*[@class="post-body"]/div[2]/div[4]/ol/li/text()
+
+all recipes.com /html/body/div[1]/div[2]/div/div[2]/section/section[3]/div/div[1]/ol[1]/li/span/text()
+
+pioneer woman //*[@id="main"]/div/article/div/div[2]/div/div[4]/div[2]/div[2]/div/text()
+
+
+two peas and their pod //*[@id="content"]/div[1]/div[3]/div/div[5]/p/text()
+
+101 cookbooks //*[@id="recipe"]/p/text()
+
+Whats Gaby Cooking  //*[@id="zlrecipe-instructions-list"]/li/text()
+
+My Baking Addiction //*[@id="content"]/div[1]/div[3]/div[4]/span/ol/li/text()
+
+Simply Recipes //*[@id="content"]/article/div[1]/div[6]/div[5]/div/p/text()
