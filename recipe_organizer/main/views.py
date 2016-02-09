@@ -2,7 +2,7 @@ from django.shortcuts import render, render_to_response
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 from django.template import RequestContext
-from django.views.generic import DetailView
+from django.views.generic import DetailView, TemplateView
 from django.views.generic.edit import CreateView
 from django import forms
 from django.core.urlresolvers import reverse
@@ -57,6 +57,36 @@ class RecipeCreateView(CreateView):
 class IngredientCreateView(CreateView):
 	form_class = IngredientForm
 	template_name = "ingred_form.html"
+
+def recipe_full(request, slug):
+	
+	request_context = RequestContext(request)
+	context = {}
+	recipe = Recipe.objects.get(slug=slug)
+	ingredient_list = []
+	for ingredient in recipe.ingredients.all():
+		ingredient_list.append(ingredient)
+	context['ingredients'] = ingredient_list
+	context['recipe'] = recipe 
+
+	return render_to_response('recipe_full.html', context, context_instance=request_context)
+
+def home_slider(request):
+
+	context = {}
+	recipes = []
+	for x in range(4):
+		random_recipe = Recipe.objects.all().order_by('?')[1]
+		
+		recipes.append(random_recipe)
+	
+	context["recipes"] = recipes
+
+	return render(request, 'home.html', context)
+
+
+		
+
 
 
 	

@@ -13,7 +13,7 @@
 <!--[if lt IE 9]> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-<title>TreeHut - Free Bootstrap Template Restaurant website | WebThemez</title>
+<title>Recipe Organizer</title>
 <meta name="description" content="">
 <meta name="author" content="WebThemez">
 <!--[if lt IE 9]>
@@ -39,12 +39,12 @@
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i>Treehut</i></b></a> </div>
+        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i>Recipe's by Marcus</i></b></a> </div>
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
-          <li><a href="#services" class="scroll-link">Menu</a></li>
+          <li class="active" id="firstLink"><a href="/home" class="scroll-link">Home</a></li>
+          <li><a href="/recipelist" class="scroll-link">Recipes</a></li>
           <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
           <li><a href="#work" class="scroll-link">Dishes</a></li>
           <li><a href="#team" class="scroll-link">Chef</a></li>
@@ -71,28 +71,14 @@
 <section id="home">
   <div class="banner-container"> 
   <!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="images/slides/1.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Awarded Restaurant</h3>  
-                </div>
-              </li>
-              <li>
-                <img src="images/slides/2.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Variety of foods</h3>   
-                </div>
-              </li>
-              <li>
-                <img src="images/slides/3.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Amazing ambiance</h3>  
-                </div>
-              </li>
-            </ul>
-        </div>
+
+    {% block slider %}
+
+    {% endblock slider %}
+
+
+
+
 	<!-- end slider -->
   </div>
   <div class="container hero-text2">

@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf import settings 
 from main.views import RecipeCreateView, IngredientCreateView
 
 urlpatterns = [
@@ -24,5 +25,9 @@ urlpatterns = [
     url(r'^recipedetailview/(?P<slug>[\w-]+)/$', 'main.views.recipe_detail'),
     url(r'^recipecreate/$', RecipeCreateView.as_view()),
     url(r'^ingredcreate/$', IngredientCreateView.as_view()),
+    url(r'^media/(?P<path>.*)/$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     url(r'^success/$', 'main.views.success'),
+    url(r'^home/$', 'main.views.home_slider'),
+    url(r'^full_recipe/(?P<slug>[\w-]+)/$', 'main.views.recipe_full'),
+    
 ]

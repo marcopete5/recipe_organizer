@@ -31,7 +31,7 @@
   	<div class="recipe">
 		{% for recipe in recipes %}
 
-		<h3><a href="/recipedetailview/{{ recipe.slug }}" style="text-decoration:none;">{{recipe.title}}</a></h3>
+		<h3><a href="/recipedetailview/{{ recipe.slug }}" style="text-decoration:none;">{{recipe.title|safe}}</a></h3>
 
 		{% endfor %}
 	</div>
