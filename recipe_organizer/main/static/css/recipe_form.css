@@ -2,8 +2,8 @@
 	margin-left:44px;
 }
 .first {
-	margin-right:0px; 
-	margin-left:0px;
+	margin-right:-14%; 
+	margin-left:-14%;
 	margin-top:30px;
 }
 .container {
@@ -13,5 +13,18 @@
 	font-size: 30px;
 	text-align: center;
 	width:300px;
-	margin-left: 37px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sub {
+	 float: right;
+    margin-right: 86%;
+    padding: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.bk {
+	margin-right: -25%;
+    float: right;
+    margin-top: 8%;
 }

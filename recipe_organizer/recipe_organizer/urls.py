@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^recipelistAPI/', 'main.views.recipe_list_API_view'),
     url(r'^recipelist/', 'main.views.listview'),
+    url(r'^recipetab/', 'main.views.tabview'),
     url(r'^recipedetailview/(?P<slug>[\w-]+)/$', 'main.views.recipe_detail'),
     url(r'^recipecreate/$', RecipeCreateView.as_view()),
     url(r'^ingredcreate/$', IngredientCreateView.as_view()),

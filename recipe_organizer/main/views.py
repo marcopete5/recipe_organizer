@@ -35,6 +35,19 @@ def listview(request):
 
 	return render_to_response('listview.html', context, context_instance=RequestContext(request))
 
+def tabview(request):
+	recipes = Recipe.objects.all()
+
+	context = {}
+
+	for recipe in recipes:
+
+		recipe.title = recipe.name
+
+	context['recipes'] = recipes 
+
+	return render_to_response('tabview.html', context, context_instance=RequestContext(request))
+
 def recipe_detail(request, slug):
 	
 	request_context = RequestContext(request)

@@ -1,6 +1,7 @@
 a:link {
 	color:rgba(33,20,20,0.66);
 }
+
 a:visited {
 	color:black;
 }
@@ -13,7 +14,7 @@ a:hover {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 1px;
-	
+
 }
 .title h1 {
 	margin-top:12%;
@@ -22,31 +23,24 @@ a:hover {
 	
 }
 
-.top img {
-	max-height: 200px;
-}
-.top {
-	background-size:cover;
-	background-repeat: no-repeat;
-	height: 240px;
-    margin-left: -5%;
-    margin-right: -5%;
-    margin-top: -1%;
-}
 .two {
 	box-shadow: 0 0 8px black;
 	margin-left: -46px;
 	margin-right:-46px;
 }
-.see {
+.steps {
 	float:left;
-	text-align: center;
 	width:50%;
-	margin-top:2%;
+	margin-top: 1%;
 
 }
 
-
+.image {
+	box-shadow: 3px 3px 13px;
+	width:40%;
+	float:right;
+	margin-top: -15%;
+}
 
 .ingred h4 {
 	font-size: 26px;
@@ -55,10 +49,19 @@ a:hover {
 .ingred {
 	margin-top: 60px;
 }
+.steps h4 {
+	font-size: 26px;
+}
+.steps a:link {
+	color:black;
+}
 .list {
+	width:100%;
+	float:left;
 	margin-top: 10px;
 	margin-left: 30px;
 }
+
 .back {
 	margin-top: 150px;
 }

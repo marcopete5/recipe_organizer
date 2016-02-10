@@ -1,4 +1,7 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block body %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +15,7 @@
 </head>
 <body>
 	
-<div class="container">
+<div class="container" style="width:100%; margin-top:-4%;">
  <div class="row">
 	<div class="title">Create New Recipe</div>
  </div>
@@ -22,14 +25,23 @@
 <form action="/recipecreate/" method="POST" enctype="multipart/form-data">
 
 	{% csrf_token %}
-	{{ form.as_p }} 
+	{{ form|crispy }} 
 	
-	<input type="submit" Value="Create"/>
+	<input type="submit" Value="Create" class="sub" />
 
 </form>
+<br>
+<br>
+<div class="row">
+   <div class="back" style="width:70%;">
+	<a class="btn btn-primary bk" href="/recipelist" role="button" style="float:right;">Back</a>
+   </div>
+ </div>
 
 </div>
 </div>
 
 </body>
 </html>
+
+{% endblock body %}

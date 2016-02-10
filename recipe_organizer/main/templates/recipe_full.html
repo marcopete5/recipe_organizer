@@ -18,14 +18,14 @@
 <body>
 	<div class="container">
 		
-		<div class="row top" style="background-image:url('/media/media/background.jpg')"></div>
+		<div class="row top"></div>
 
 		 <div class="row two">
 		  <div class="title">
 		   <h1>{{ recipe.name|safe }}</h1>
 		  </div>
 		 </div>
-	<!-- 	 
+	 	 
 			 <div class="row">
 			 	<div class="ingred">
 			 		<h4>Ingredients:</h4>
@@ -33,27 +33,28 @@
 			 			{% for ingredient in ingredients %}
 			 			{{ ingredient }}<br/>
 			 			{% endfor %}
+			 			</div>
+			 	</div>
+			 	<div class="image">
+			 			   <img src="/media/{{ recipe.image }}">
 			 		  </div>
-			 		  <div class="image">
-			 		<img src="/media/{{ recipe.image }}">	
-			 	</div>
-			 	</div>
-			 </div>
-			 
-			 <div class="row">
-			 	<div class="ingred">
+				<div class="steps">
 			 		<h4>Steps:</h4>
 			 		  <div class="list">
 			 			{{ recipe.steps|linebreaks }}
 			 		  </div>
+			 		  <div class="url">
+			 		  <a href="{{recipe.website}}">See Website</a>
+			 		  </div>
 			 	</div>
 			 </div>
+
 			 
 			  <div class="row">
 			   <div class="back">
 				<a class="btn btn-primary bk" href="/recipelist" role="button">Back</a>
 			   </div>
-	          </div> -->
+	          </div> 
 </div>
 </body>
 </html>

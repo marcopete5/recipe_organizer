@@ -36,7 +36,7 @@ for recipe in recipes:
 	parser = etree.HTMLParser()
 	tree = etree.parse(StringIO.StringIO(html), parser)
 	if recipe['publisher'] == 'Closet Cooking':
-		with requests.Session() as session:
+		# with requests.Session() as session:
 			
 		_xpath = "html/body/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[5]/ol/li/text()"
 		filtered_html = tree.xpath(_xpath)
@@ -49,6 +49,7 @@ for recipe in recipes:
 
 	elif recipe['publisher'] == 'The Pioneer Woman':
 		_xpath = "//*[@id='main']/div/article/div/div[2]/div/div[4]/div[2]/div[2]/div/text()"
+		_xpath = //*[@id="recipe-instructions-56bbc7902d7ec"]/div/text()[1]
 		filtered_html = tree.xpath(_xpath)
 		filtered_html = "\n".join(filtered_html)
 
