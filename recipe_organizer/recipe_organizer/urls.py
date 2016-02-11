@@ -30,5 +30,8 @@ urlpatterns = [
     url(r'^success/$', 'main.views.success'),
     url(r'^home/$', 'main.views.home_slider'),
     url(r'^full_recipe/(?P<slug>[\w-]+)/$', 'main.views.recipe_full'),
+    url(r'^search/?$', 'main.views.search'),
+
     
 ]
+

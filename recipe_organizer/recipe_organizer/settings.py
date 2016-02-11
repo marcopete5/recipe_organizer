@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #3rd party apps
     'crispy_forms',
-    'corsheaders',
     #my apps 
     'main',
 ]
