@@ -2,9 +2,10 @@ from django.shortcuts import render, render_to_response
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 from django.template import RequestContext
-from django.views.generic import DetailView, TemplateView
+from django.views.generic import DetailView, TemplateView, ListView
 from django.views.generic.edit import CreateView
 from django import forms
+from django_searchbar.mixins import SearchBarViewMixin
 from django.core.urlresolvers import reverse
 from main.models import Recipe, Ingredient
 from .forms import RecipeForm, IngredientForm
@@ -34,6 +35,9 @@ def listview(request):
 	context['recipes'] = recipes 
 
 	return render_to_response('listview.html', context, context_instance=RequestContext(request))
+
+class SearchView(SearchBarViewMixin, ListView):
+	searchbar_fields = ['name']
 
 def tabview(request):
 	recipes = Recipe.objects.all()
