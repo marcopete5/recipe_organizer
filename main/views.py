@@ -167,7 +167,12 @@ def search(request):
 	        	print dir(entries)
 	        	recipes.append(Recipe.objects.filter(ingredients=entries.pk))
 
-	        found_entries = recipes 
+	        found_entries = recipes
+
+
+
+
+
 
 
 
