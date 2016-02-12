@@ -150,5 +150,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 try:
     from local_settings import *
-except Exception, e:
-    raise e
+except Exception as e:
+    pass
