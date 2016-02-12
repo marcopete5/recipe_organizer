@@ -1,0 +1,58 @@
+a:link {
+	color:black;
+}
+a:visited {
+	color:black;
+}
+.title {
+	width:230px;
+	margin: auto;
+}
+.title h1 {
+	font-size: 60px;
+
+}
+.recipe {
+	margin-top: 40px;
+}
+.recipe h3 {
+	display: inline;
+	padding: 20px;
+}
+.create {
+	margin-top: 40px;
+	float:right;
+}
+
+.tabswitch {
+	margin-top: 7%;
+	background: rgba(226, 212, 212, 0.56);
+	float: right;
+    border: 1px solid black;
+    width: 100px;
+    height: 45px;
+    border-radius: 6px;
+}
+.tabswitch a:hover{
+	background:gray;
+}
+.tabswitch a:visited {
+	background:black;
+}
+
+.button {
+	float: right;
+    height: 30px;
+    width: 30px !important;
+}
+.lis {
+	margin-right: 2px;
+}
+.tab {
+	margin-right: 2px;
+}
+.tabs {
+	padding: 5px;
+	height: 43px;
+    width: 49px;
+}

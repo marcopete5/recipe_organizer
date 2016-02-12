@@ -1,0 +1,85 @@
+a:link {
+	color:rgba(33,20,20,0.66);
+}
+a:visited {
+	color:black;
+}
+a:hover {
+
+}
+.title {
+	float:left;
+	width:50%;
+	margin: auto;
+}
+.title h1 {
+	margin-top:12%;
+	font-size: 200%;
+	text-align: center;
+	
+}
+.box {
+	margin-top: 40px;
+	border:1px solid black;
+	border-radius: 45px;
+	box-shadow: 2px 2px 3px;
+
+}
+
+.image {
+	background-position: right;
+	border-top-right-radius: 44px;
+	border-bottom-right-radius: 44px;
+	background-repeat: no-repeat;
+	float:right;
+	width:50%;
+	height: 300px;
+}
+.see {
+	float:left;
+	text-align: center;
+	width:50%;
+	margin-top:2%;
+
+}
+.see a {
+	width: 50%;
+}
+.see h3 {
+	font-size: 129%;
+	margin-top:5%;
+	font-family:'Oswald',sans-serif;
+}
+.btn {
+	padding: 0px;
+	margin-top: 0%;
+	border-radius: 30px!important;
+	border:1px black solid;
+}
+.btn-default {
+	background-color:#e6d8d8;
+
+}
+
+
+
+
+.ingred h4 {
+	font-size: 26px;
+
+}
+.ingred {
+	margin-top: 60px;
+}
+.list {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.back {
+	margin-top: 150px;
+}
+.bk {
+	padding:6px;
+	float:right;
+	width:90px;
+}
