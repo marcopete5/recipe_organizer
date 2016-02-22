@@ -21,10 +21,8 @@
 		<div class="row">
 			 		<h4>Ingredients:</h4>
 
-			 	{% for entry in found_entries %}
-					{% for recipe in entry %}
-			 	<span class="recipe_filter">{{ recipe|safe|linebreaks }}</span>
-			 			 {% endfor %}
+			 	{% for recipe in found_recipes %}
+				 	<span class="recipe_filter">{{ recipe|safe|linebreaks }}</span>
 			 	{% endfor %}
 
 		</div>

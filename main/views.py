@@ -123,7 +123,6 @@ def normalize_query(query_string,
 def get_query(query_string, search_fields):
     ''' Returns a query, that is a combination of Q objects. That combination
         aims to search keywords within a model by testing the given search fields.
-    
     '''
     query = None # Query to search for every search term        
     terms = normalize_query(query_string)
@@ -144,14 +143,15 @@ def get_query(query_string, search_fields):
 def search(request):
 	request_context = RequestContext(request)
 	context = {}
-	recipe = Recipe.objects.all()
-	ingredient_list = []
+	# recipes = Recipe.objects.all()
+	# ingredient_list = []
+	ingredient_list = Ingredient.objects.all()
 	query_string = ''
     
-	for ingredient in recipe:
-		ingredient_list.append(ingredient)
+	# for ingredient in recipes:
+	# 	ingredient_list.append(ingredient)
 	context['ingredients'] = ingredient_list
-	context['recipe'] = recipe 
+	# context['recipes'] = recipes
 
 
 	if ('q' in request.GET) and request.GET['q'].strip():
@@ -159,24 +159,22 @@ def search(request):
 	        
 	        ingredients = get_query(query_string, ['name'])
 	        
-	        found_entries = Ingredient.objects.filter(ingredients)
-	        print type(found_entries)
+	        found_ingredients = Ingredient.objects.filter(ingredients)
 
-	        recipes = []
-	        for entries in found_entries:
-	        	print dir(entries)
-	        	recipes.append(Recipe.objects.filter(ingredients=entries.pk))
-
-	        found_entries = recipes
-
-
-
-
-
+	        found_recipes = []
+	        # for entries in found_entries:
+	        # 	print dir(entries)
+	        # 	recipes_list.append(Recipe.objects.filter(ingredients=entries.pk))
+	        for ingredient in found_ingredients:
+	        	recipes_with_ingredient = Recipe.objects.filter(ingredients=ingredient.pk)
+	        	for recipe in recipes_with_ingredient:
+	        		if not recipe in found_recipes:
+        				found_recipes.append(recipe)
+	        
 
 
 
-	return render_to_response('search.html',{ 'query_string': query_string, 'found_entries': found_entries }, context_instance=RequestContext(request))
+	return render_to_response('search.html',{ 'query_string': query_string, 'found_recipes': found_recipes }, context_instance=RequestContext(request))
 	# return HttpResponse(found_entries)
 	
 class SearchRecipeView(TemplateView):
