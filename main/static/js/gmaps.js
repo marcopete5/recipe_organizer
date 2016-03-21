@@ -40,6 +40,7 @@ var replace_object = function(obj, replace) {
   return obj;
 };
 
+
 var array_map = function(array, callback) {
   var original_callback_params = Array.prototype.slice.call(arguments, 2),
       array_return = [],
@@ -64,6 +65,8 @@ var array_map = function(array, callback) {
 
   return array_return;
 };
+
+}
 
 var array_flat = function(array) {
   var new_array = [],

@@ -118,6 +118,9 @@ for x in range(4,10):
 			new_recipe.save()   
 		except:
 			print "oops try again"
+
+
+
 		
 
 		# image = urllib.urlretrieve(recipe['image_url'])
@@ -130,4 +133,16 @@ for x in range(4,10):
 		# new_recipe, created = Recipe.objects.get_or_create(name = recipe['title'])
 		# new_recipe.ingredients = response['recipe']['ingredients']
 		# new_recipe.image.save(os.path.basename(recipe['image_url']), File(open(image[0])))
+
+
+
+
+
+
+
+
+
+
+
+
 
