@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{% static "css/recipe_form.css" %}">
+
+</head>
+<body>
+	
+<div class="container" style="width:100%; margin-top:-4%;">
+ <div class="row">
+	<div class="title">Create New Recipe</div>
+ </div>
+<div class="row first">
+
+
+<form action="/recipecreate/" method="POST" enctype="multipart/form-data">
+
+	{% csrf_token %}
+	{{ form|crispy }} 
+	
+	<input type="submit" Value="Create" class="sub" />
+
+</form>
+<br>
+<br>
+<div class="row">
+   <div class="back" style="width:70%;">
+	<a class="btn btn-primary bk" href="/recipelist" role="button" style="float:right;">Back</a>
+   </div>
+ </div>
+
+</div>
+</div>
+
+</body>
+</html>
+
+{% endblock body %}

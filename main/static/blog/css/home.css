@@ -1,0 +1,334 @@
+a:link {
+	color:white;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+}
+a:active {
+	color: white;
+}
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.header {
+	background-color: rgba(0,0,0,0.21);
+	height: 90px;
+	margin-top: -20px;
+}
+.header span {
+	float:right;
+	padding: 22px;
+	margin-top: 21px;
+	font-family: "Oswald", sans serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: #fffbfb;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.header h3 {
+	float:left;
+	width:96px;
+	padding:19px;
+	font-size: 31px;
+	font-family: "Oswald", sans serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: #fffbfb;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-left: 7px;
+	margin-top: 22px;
+}
+img {
+	width:100%;
+	position:relative;
+}
+
+
+div#background-slideshow{
+	z-index: -1;
+
+	width:100%;
+	position: relative;
+	top:0px;
+	right:0px;
+}
+
+img.slides {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	right: 0px;
+
+}
+
+img#home-image{
+	z-index: -666;
+}
+
+img#shop-image{
+	z-index: -777;
+}
+
+img#dine-image {
+	z-index: -888;
+}
+img#watch-image{
+	z-index: -999;
+}
+
+.col-xs-2 {
+	margin-right: -30px;
+	width: 12.84766667%;
+	margin-top: 0px;
+}
+
+.instagram-container {
+	box-shadow: 0 0 30px black;
+	position: relative;
+}
+
+br {
+	clear:both;
+}
+.row {
+
+}
+
+.photo {
+	margin-top: 38%;
+	margin-left: 23px;
+}
+.photo2 {
+	margin-top: 11%;
+	margin-left: 23px;
+}
+.images img {
+    border: 1px rgba(0, 0, 0, 0.61);
+    vertical-align: middle;
+    border-radius: 1px;
+    width: 11.211111%;
+    /*z-index: -1;*/
+}
+#one {
+	position:absolute;
+	right: 88.9%;
+}
+#two {
+	position: absolute;
+	right: 77.77%;
+}
+#three {
+	position: absolute;
+	right:66.61%;
+}
+#four {
+	position: absolute;
+	right:55.45%;
+}
+#five {
+	position: absolute;
+	right:44.29%;
+}
+#six {
+	position: absolute;
+	right:33.13%;
+}
+#seven {
+	position: absolute;
+	right:22%;
+}
+#eight {
+	position: absolute;
+	right:11%;
+}
+#nine {
+	position: absolute;
+	right:0%;
+}
+
+
+
+
+
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section.module:last-child {
+	margin-bottom: 0;
+}
+
+section.module h2 {
+	margin-bottom: 40px;
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+}
+
+section.module p {
+	margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+section.module p:last-child {
+	margin-bottom: 0;
+}
+
+section.module.content {
+	padding: 40px 0;
+}
+
+section.module.parallax {
+	height: 800px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+section.module.parallax h1 {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 48px;
+	line-height: 800px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+
+
+
+
+
+
+.bottom {
+	height: 400px;
+}
+.bar {
+	height: 50px;
+	background-color: #634848;
+	padding: 16px;
+	box-shadow: 0 0 18px black;
+}
+.details {
+	float:left;
+	padding: 0px;
+	margin-left: 45px;
+	font-family: "Oswald", sans serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: white;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.logo {
+	margin-top: 3px;
+	margin-left: 165px;
+
+}
+.logo img#face {
+	height: 20px;
+	width:20px;
+}
+.logo img#vimeo {
+	height: 20px;
+	width: 20px;
+}
+.logo img#insta {
+	height: 20px;
+	width: 20px;
+}
+.logo a {
+	margin-right: 11px;
+}
+
+
+/*#home-cont-wrapper {
+	position: static;
+	z-index: 10;
+	background: #fff;
+	position:relative;
+	margin-top: 37%;
+}
+
+#instagram {
+	box-shadow: 0 0 40px -6px rgba(0,0,0,0.45);
+}
+.container-fluid.no-gutter {
+	padding:0;
+}
+.container-fluid {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+#instafeed-wrap div.split {
+	overflow-x: hidden;
+	overflow-y: hidden; 
+	width: 134%;
+	display:block;
+	position:relative;
+}
+#instafeed-wrap div .spacing {
+	display: block;
+	position: relative;
+	top:0;
+	height:0;
+	width:100%;
+}
+#instafeed-wrap div.single {
+	overflow: hidden;
+	width:115%;
+	display:block;
+	positon:relative;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

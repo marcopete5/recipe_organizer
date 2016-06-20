@@ -1,0 +1,114 @@
+
+
+
+a:link {
+	color:rgba(33,20,20,0.66);
+}
+a:visited {
+	color:black;
+}
+
+.title {
+	float:left;
+	width:50%;
+	margin: auto;
+}
+.title h1 {
+	margin-top:12%;
+	font-size: 200%;
+	text-align: center;
+	
+}
+.box {
+	margin-top: 62px;
+	border:1px solid black;
+	border-radius: 45px;
+	box-shadow: 2px 2px 3px;
+
+}
+
+.image {
+	background-position: right;
+	border-top-right-radius: 44px;
+	border-bottom-right-radius: 44px;
+	background-repeat: no-repeat;
+	float:right;
+	width:50%;
+	height: 300px;
+}
+.see {
+	float:left;
+	text-align: center;
+	width:50%;
+	margin-top:2%;
+
+}
+.see a {
+	width: 50%;
+}
+.see h3 {
+	font-size: 129%;
+	margin-top:5%;
+	font-family:'Oswald',sans-serif;
+}
+.btn {
+	padding: 0px;
+	margin-top: 0%;
+	border-radius: 30px!important;
+	border:1px black solid;
+}
+.btn-default {
+	background-color:#e6d8d8;
+
+}
+
+.tabswitch {
+	background: rgba(226, 212, 212, 0.56);
+	float: right;
+    border: 1px solid black;
+    width: 100px;
+    height: 45px;
+    border-radius: 6px;
+}
+.tabswitch a:hover{
+	background:gray;
+}
+.tabswitch a:visited {
+	background:black;
+}
+
+.button {
+	float: right;
+    height: 30px;
+    width: 30px !important;
+}
+.lis {
+	margin-right: 2px;
+}
+.tab {
+	margin-right: 2px;
+}
+.tabs {
+	padding: 5px;
+	height: 43px;
+    width: 49px;
+}
+.ingred h4 {
+	font-size: 26px;
+
+}
+.ingred {
+	margin-top: 60px;
+}
+.list {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.back {
+	margin-top: 150px;
+}
+.bk {
+	padding:6px;
+	float:right;
+	width:90px;
+}

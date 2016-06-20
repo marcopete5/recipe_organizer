@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>listview2</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{% static "css/tabview.css" %}">
+
+
+</head>
+<body>
+
+
+ <div class="container">
+ 	<div class="tabswitch">
+ 	<div class="tabs" style="float:right"><a href="/recipetab"><img src="/media/media/tab.png" class="button tab" alt=""></a></div><div class="tabs" style="float:left"><a href="/recipelist"><img src="/media/media/list.png" class="button lis" alt=""></a></div>
+ 	</div>
+
+ 	<h1 style="text-align: center; margin-top: -2%;">Recipes</h1>
+{% for recipe in recipes %}
+	<div class="row box">
+		
+		<div class="title"><h1>{{ recipe.name|safe }}</h1></div>
+		<div class="image" style="background-image:url('/media/{{ recipe.image }}')"></div>
+		<div class="see"><a class="btn btn-default" href="/full_recipe/{{recipe.slug}}" role="button"><h3>See Recipe</h3></a></div>
+		
+	</div>
+{% endfor %}
+</div>
+	
+</body>
+</html>
+
+
+{% endblock body %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>search</title>
+
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href='{% static "css/recipe_search.css" %}'>
+
+</head>
+<body>
+	<div class="container">
+		<div class="search">
+			<form method="get" action="/search/">
+			          <label for="id_q"><h1 class="labe">Search Recipes by Ingredient:</h1></label>
+						<br/>
+			           <input type="text" name="q" id="id_q" class="bar" />
+			           <input type="submit" value="Add Ingredient"  />
+			</form>
+		</div>
+		
+		<div class="two"></div>
+
+
+
+	</div>
+</body>
+</html>
+
+{% endblock body %}
